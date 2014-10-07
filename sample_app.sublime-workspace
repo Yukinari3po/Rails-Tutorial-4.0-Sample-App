@@ -1,0 +1,755 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"home",
+				"Home"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"we",
+				"webkit-flex"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"co",
+				"column"
+			],
+			[
+				"repeat",
+				"repeat-y"
+			],
+			[
+				"border-le",
+				"border-bottom-left-radius"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"ea",
+				"ease-out"
+			],
+			[
+				"tra",
+				"translateX"
+			],
+			[
+				"ou",
+				"outline"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"p",
+				"permalink"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"A",
+				"Accent_Larger"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"arra",
+				"array	$… = array (…)"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"icon",
+				"icon_url"
+			],
+			[
+				"Based_",
+				"Based_Smaller"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"d",
+				"double"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"border-w",
+				"border-width"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"ass",
+				"assorted_color"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"bord",
+				"border-collapse"
+			],
+			[
+				"out",
+				"outline-color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"be",
+				"before_title"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"sca",
+				"scale-with-grid"
+			],
+			[
+				"yukinari",
+				"Yukinari3po"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"bacn",
+				"background-color"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"参加者",
+				"参加者"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rails ",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"git bran",
+				"Git: New Branch"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import Haxe",
+			"import haxe",
+			"import ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/yuki_n/Documents/Rails/sample_app"
+	],
+	"file_history":
+	[
+		"/Users/yuki_n/Documents/Rails/sample_app/spec/requests/static_pages_spec.rb",
+		"/Users/yuki_n/Documents/Rails/first_app/README.md",
+		"/Users/yuki_n/Documents/Rails/first_app/Gemfile",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58230f08-56da-4814-817a-a9709329e8e8/home/yukinari3po/www/trpgchat/chat01/config.cgi",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58230f08-56da-4814-817a-a9709329e8e8/home/yukinari3po/www/trpgchat/chat02/config.cgi",
+		"/Users/yuki_n/Downloads/chat01/chat.cgi",
+		"/Users/yuki_n/Downloads/chat01/index.cgi",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/style.css",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/6cc7a42e-c0c8-43ce-b1c2-b5fbcdb42381/wordpress/wp-config.php",
+		"/Volumes/sunnyday-yukinari3po.webdav-lolipop.jp/wordpress/wp-config.php",
+		"/Users/yuki_n/Sites/wp-config.php",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/517e154b-ba7e-43ff-967c-4a5968edcc27/wordpress/wp-config.php",
+		"/Users/yuki_n/Downloads/Yukinari3po.xml",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/footer.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/images/yukinari3po-header.svg",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/header-navigations.php",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/yukinari3po.com/public_html/wp-content/themes/Y3P_theme_01/style.css",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/header.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/functions.php",
+		"/Applications/LINE.app/Contents/Info.plist",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/trpgchat.yukinari3po.com/public_html/ytchat2/css/chat.css",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01_Origin/index.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01_Origin/content.php",
+		"/Users/yuki_n/Sites/ytchat2/css/chat.css",
+		"/Applications/Adobe Media Encoder CS5/PCI/AMEPCI/payloads/AMEPCI5All/media.sql",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/trpgchat.yukinari3po.com/public_html/ytchat2/config.cgi",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/trpgchat.yukinari3po.com/public_html/ytchat2/index.cgi",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/trpgchat.yukinari3po.com/public_html/config.cgi",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/trpgchat.yukinari3po.com/public_html/index.cgi",
+		"/Users/yuki_n/Downloads/ytchat2/pl/dice/sw2.pl",
+		"/Users/yuki_n/Downloads/ytchat2/num.dat",
+		"/Users/yuki_n/Downloads/ytchat2/config.cgi",
+		"/Users/yuki_n/Downloads/ytchat2/index.cgi",
+		"/Users/yuki_n/Downloads/wordpress/wp-content/plugins/akismet/_inc/akismet.css",
+		"/Users/yuki_n/layout-kategori- .css",
+		"/Users/yuki_n/y3p/index.html",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/images/Logo のコピー.svg",
+		"/Users/yuki_n/Sites/wp-content/languages/themes/y3p-ja.po",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/css/decorate.css",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/content.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/category.php",
+		"/Library/Server/Web/Config/apache2/httpd_server_app.conf",
+		"/Users/yuki_n/new.cgi",
+		"/Users/yuki_n/Downloads/new.txt",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P_theme_01/css/base.css",
+		"/Users/yuki_n/Sites/wp-content/languages/themes/yukinari3po-ja.po",
+		"/Users/yuki_n/Sites/wp-content/languages/themes/y3p_theme_01-ja.po",
+		"/Users/yuki_n/Sites/wp-content/plugins/really-static/rewrite.php",
+		"/Users/yuki_n/Sites/wp-content/plugins/mqtranslate/mqtranslate_configuration.php",
+		"/Users/yuki_n/Sites/wp-content/plugins/mqtranslate/mqtranslate_core.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/header-navigations.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/footer.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/style.css",
+		"/Users/yuki_n/Sites/mt/index.html",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/c1b955d4-0c9b-432d-b9b2-ae804ecdc3e6/wp-config.php",
+		"/private/var/folders/kt/x0lttqkd01ggxqw35dxj7df40000gn/T/58aad5b9-37c1-44df-b037-0b85cb252863/.profile",
+		"/Users/yuki_n/Downloads/webex/webexplorer.cgi",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/index.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/content.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/category.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/css/decorate.css",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01_Origin/category.php",
+		"/Volumes/External Drive/[01] Inbox/Morphing Power Cubes.html",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01_Origin/style.css",
+		"/Volumes/MobileBackups/Backups.backupdb/Jovian Van-Allen/2014-08-09-135557/Macintosh HD/Users/yuki_n/Sites/wp-content/themes/Y3P.02/functions.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.02/functions.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.01/single.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Y3P.02/front-page.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/front-page.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/category.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/functions.php",
+		"/Users/yuki_n/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/style.css",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/inc/pagenations.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/category-articles.php",
+		"/Users/yuki_n/Git_Repositry/Yukinari3po Website/stylesheets/skeleton.css",
+		"/Users/yuki_n/Sites/wp-includes/category-template.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/inc/y3p-nav-menu-template.php",
+		"/Users/yuki_n/Sites/wp-content/plugins/really-static/php/functions.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/footer.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/content.php",
+		"/Users/yuki_n/Sites/wp-content/themes/twentyfourteen/languages/twentyfourteen.pot",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/header.php",
+		"/Users/yuki_n/Sites/backup/wp-content/languages/continents-cities-ja.po",
+		"/Users/yuki_n/Sites/backup/wp-content/languages/ja.po",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/single.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/inc/svgs.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/css/base.css",
+		"/Users/yuki_n/[デザイン] 行き成り3歩_Icon.svg",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/css/skeleton.css",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/content-for-list.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/languages/yukinari3po.pot",
+		"/Users/yuki_n/Sites/wp-content/languages/themes/yukinari3po-ja.mo",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/content-image.php",
+		"/Users/yuki_n/Sites/wp-includes/link-template.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/images/round-catted-border.svg",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/images/header-image.svg",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/inc/custom-header.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/functions~.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/functions/custom-post-type.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/single-svgs.php",
+		"/Users/yuki_n/header.svg",
+		"/Users/yuki_n/Sites/backup/wp-content/plugins/advanced-custom-fields/core/api.php",
+		"/Users/yuki_n/Sites/backup/wp-content/plugins/advanced-custom-fields/core/controllers/post.php",
+		"/Users/yuki_n/Sites/wp-content/plugins/advanced-custom-fields/core/fields/wysiwyg.php",
+		"/Users/yuki_n/Sites/wp-includes/post.php",
+		"/Users/yuki_n/Sites/backup/wp-includes/rewrite.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/images/header-image.php",
+		"/Users/yuki_n/Sites/wp-includes/default-filters.php",
+		"/Users/yuki_n/Sites/wp-includes/shortcodes.php",
+		"/Users/yuki_n/Sites/wp-includes/formatting.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/svg.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/content-6columns.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/category-blog.php",
+		"/Users/yuki_n/Sites/wp-content/themes/twentyfourteen/header.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/sidebar.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/inc/widgets.php",
+		"/Users/yuki_n/Sites/wp-includes/default-widgets.php",
+		"/Volumes/External Drive/[05] 参考資料/[いきつけのお店。]/ダイキョーバリュー近くのピザ屋さん-.textClipping",
+		"/Users/yuki_n/Documents/Unity/Crash_Hero/Assets/UnityChan/Scripts/UnityChanControlScriptWithRgidBody.cs",
+		"/Users/yuki_n/Downloads/sao_silica_01.html",
+		"/Users/yuki_n/Library/Caches/TemporaryItems/sao_silica_01.html",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/home.php",
+		"/Users/yuki_n/Sites/wp-content/themes/Yukinari3po/tag.php",
+		"/Users/yuki_n/Sites/wp-content/themes/twentyfourteen/inc/template-tags.php",
+		"/Users/yuki_n/.Trash/wordpress/wp-content/themes/child/header.php",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/yuki_n/Sites/wp-content/themes/child/page-templates/contact.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"^.*] ",
+			"^.*]",
+			"^.*",
+			".*",
+			".",
+			".*",
+			"[.*",
+			"\\[.*",
+			"/[.*",
+			"¥[.*",
+			"¥.*",
+			".*",
+			".",
+			"[.]",
+			"[¥[*$]",
+			"[[*$]",
+			"[.*$]",
+			"[^.*$]",
+			"[^]",
+			"[^*]",
+			"[^.*]",
+			"[^.*",
+			".*",
+			"[*]",
+			"font-",
+			"br",
+			"box-sizing",
+			"line",
+			"yukinari3po",
+			"$1",
+			"rs_",
+			"datere",
+			"date",
+			"%post",
+			"str_replace",
+			"date",
+			"date(",
+			"post_content",
+			"$post",
+			"post",
+			"suexec",
+			"display:-webkit-flex;",
+			"series",
+			";\n",
+			"radi",
+			"scale",
+			"            \n",
+			"box",
+			"container",
+			"flex grow",
+			"float",
+			":after",
+			"transition",
+			"clear",
+			"FF5C2D",
+			"main",
+			"Prev",
+			"article",
+			"-50%",
+			"body",
+			"header",
+			"body",
+			"ul li",
+			"67",
+			"-webkit-box-shadow",
+			"border-radius",
+			"0.3s",
+			"0.2s",
+			"nav_menu_css_class",
+			"start_el",
+			"item-",
+			"menu_id_slugs",
+			"y3p_",
+			"y3p_wp",
+			"plain_wp_nav_menu",
+			"Plane_Walker_Nav_Menu",
+			"y3p_wp_nav_menu",
+			"Y3p_Walker_Nav_Menu",
+			"Y3p_",
+			"Walker_Nav_Menu",
+			"y3p_end_el",
+			"y3p_start_el",
+			"y3p_end_lvl",
+			"y3p_start_lvl",
+			"_nav_menu_item_id_use_once",
+			"walk_nav_menu_tree",
+			"_wp_menu_item_classes_by_context",
+			"wp_nav_menu",
+			"end_el",
+			"start_el",
+			"end_lvl",
+			"start_lvl",
+			"function ",
+			"li",
+			"link",
+			"hover",
+			"tra",
+			"padding",
+			"none",
+			"new",
+			"Previous",
+			"h d=",
+			"style=\"fill:#9FE1FF;\"",
+			"style=\"fill:#FFFFFF;\"",
+			"font-size",
+			"font-family",
+			"font",
+			"the_field('Based_Smaller',$cat_id_string);",
+			"the_field('Assorted_Smaller',$cat_id_string);",
+			"the_field('Accent_Smaller',$cat_id_string);",
+			"the_field('Assorted_Larger',$cat_id_string);",
+			"the_field('Accent_Larger',$cat_id_string);",
+			";\n",
+			"main-body",
+			"none",
+			"次",
+			"投稿",
+			"main_body",
+			"main_",
+			".container",
+			"link",
+			"link]",
+			"link",
+			"959px",
+			"illustration",
+			"float",
+			"text-",
+			"header"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"y3p",
+			"display:-webkit-flex;display:flex;",
+			"plain_",
+			"plain",
+			"plain_nav_menu",
+			"Plain_Walker_Nav_Menu",
+			"plain_wp_nav_menu",
+			"Plane_Walker_Nav_Menu",
+			"Plane_",
+			"Y3p_Walker_Nav_Menu",
+			"end_el",
+			"start_el",
+			"end_lvl",
+			"start_lvl",
+			"y3p_nav_menu_item_id_use_once",
+			"y3p_walk_nav_menu_tree",
+			"y3p_wp_menu_item_classes_by_context",
+			"y3p_wp_nav_menu",
+			"y3p_end_el",
+			"y3p_start_el",
+			"y3p_end_lvl",
+			"y3p_start_lvl",
+			"function y3p_",
+			"h class=\"shade\" d=",
+			"class=\"fill\"",
+			"class=\"sun\"",
+			"echo $color['Based_Smaller'] ",
+			"echo $color['Assorted_Smaller'] ",
+			"echo $color['Accent_Smaller'] ",
+			"echo $color['Assorted_Larger'] ",
+			"echo $color['Accent_Larger'] ",
+			"body",
+			"1019px",
+			"1019",
+			"eyecatch",
+			"Yukinari_Sampo",
+			"Yukinari Sampo",
+			"yukinari3po",
+			"based_",
+			"assorted",
+			"accent2",
+			"fifteen",
+			"#",
+			" a:visited",
+			" a:link",
+			" a:link,",
+			"visited",
+			"賢さが<%= int %>・知覚が<%= per %>上昇する。",
+			"攻撃力が<%= str %>上昇する。",
+			"/usr/local/bin/perl"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"project": "sample_app.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 117.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
