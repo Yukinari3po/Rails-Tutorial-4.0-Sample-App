@@ -10,6 +10,11 @@ module SessionsHelper
 		!current_user.nil?
 	end
 
+	def sign_out
+		self.current_user = nil
+		cookies.delete(:remember_token)
+	end
+
 	def current_user=(user) # 演算子のオーバーライドのようなもの
 		@current_user = user
 	end
