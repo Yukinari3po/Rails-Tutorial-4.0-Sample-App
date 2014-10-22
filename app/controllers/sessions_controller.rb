@@ -5,9 +5,10 @@ class SessionsController < ApplicationController
 	def create
 		user = User.find_by(email: params[:session][:email].downcase)
 		if user && user.authenticate(params[:session][:password])
-			# ユーザーをサインインさせ、ユーザーページ(show)にリダイレクトする。
+			sign_in user
+			redirect_to ser
 		else
-			flash.now[:error] = 'Invalid email/password combination' #誤りあり！
+			flash.now[:error] = 'Invalid email/password combination'
 			render 'new'
 		end
 	end
