@@ -51,11 +51,15 @@ class UsersController < ApplicationController
 
   	private
 
+      # Webから変更・参照を許可するパラメータを設定する.
+      # (Strong Parameters)
   		def user_params
   			params.require(:user).permit(	:name, 
   											:email,
   											:password,
-  											:password_confirmation)
+  											:password_confirmation,
+                        :admin # テストのための一時的な措置(9.6.1).
+                        )
   		end
 
       # Before Actions 

@@ -48,6 +48,19 @@ describe "User Pages" do
 				it { should_not have_link('delete', href: user_path(admin)) }
 			end
 		end
+
+		describe "forbbiden attributes" do
+			let(:params) do
+				{ user: { admin: true, password: user.password,
+						  password_confirmation: user.password } }
+			end
+
+			before do 
+				sign_in user, no_capybara: true
+				patch user_path(user), params
+			end
+			specify { expect(user.reload).not_to be_admin }
+		end
 	end
 
 	describe "profile page" do
