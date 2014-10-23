@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:edit, :update]
+  before_action :signed_in_user, only: [:index, :edit, :update]
   before_action :correct_user,   only: [:edit, :update]
 
+
+  # 以降、各actionが呼び出された時に呼び出される。
   def index
-    # 全てのuserを読み出して変数に格納している。 動作が重い。
-    @users = User.all
+    @users = User.paginate(page: params[:page])
   end
 
 	def show 
