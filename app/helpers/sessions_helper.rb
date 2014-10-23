@@ -37,6 +37,7 @@ module SessionsHelper
 		session.delete(:return_to)
 	end
 
+	# railsが提供するsessionを用いてリクエストされたURLを保存する
 	def store_location
 		session[:return_to] = request.url
 	end
