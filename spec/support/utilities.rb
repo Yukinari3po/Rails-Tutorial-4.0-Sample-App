@@ -1,13 +1,13 @@
 include ApplicationHelper
 
-def valid_signin(user)
+def valid_sign_in(user)
 	# with: はシンボルではなく、引数のようなものだと考えて良さそうだ。
 	fill_in "Email" , with: user.email
 	fill_in "Password", with: user.password
 	click_button "Sign in"
 end
 
-def signin(user, options={})
+def sign_in(user, options={})
 	if options[:no_capybara]
 		#Capybaraを使用していない場合にもサインインする。
 		remember_token = User.new_remember_token
