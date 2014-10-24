@@ -3,15 +3,14 @@ require 'spec_helper'
 describe Micropost do
 
 	let(:user) { FactoryGirl.create(:user) }
-	before do
-		# このコードは慣用的な意味で正しくない。
-		@micropost = Micropost.new(content: "Lorem ipsum", user_id: user.id)
-	end
+	before { @micropost = Micropost.new(content: "Lorem ipsum", user_id: user.id)}
 
 	subject { @micropost }
 
 	it { should respond_to(:content) }
 	it { should respond_to(:user_id) }
+	it { should respond_to(:user) }
+	its(:user) { should eq user }
 
 	it { should be_valid }
 
