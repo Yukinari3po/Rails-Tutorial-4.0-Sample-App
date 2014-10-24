@@ -52,16 +52,38 @@ describe "Authentication" do
 		describe "for non-signed-in users" do
 			let(:user) { FactoryGirl.create(:user) }
 
-			describe "when attempting to visit a protected page" do
+			describe "when attempting to visit a user edit page" do
 				before do 
 					visit edit_user_path(user)
-					sign_in user, in_this_page: true
+					sign_in user, at_current_page: true
 				end
 
 				describe "after signing in" do
-
 					it "should render the desired protected page" do
 						expect(page).to have_title('Edit user')
+					end
+
+					describe "when signing in again" do
+						before do
+							delete signout_path
+							sign_in user
+						end
+						it "should render the user profile page" do
+							expect(page).to have_title(user.name)
+						end
+					end
+				end
+			end
+
+			describe "when attempting to visit a users page" do
+				before do 
+					visit users_path
+					sign_in user, at_current_page: true
+				end
+
+				describe "after signing in" do
+					it "should render the desired protected page" do
+						expect(page).to have_title('All users')
 					end
 				end
 			end
@@ -112,6 +134,16 @@ describe "Authentication" do
 			describe "submitting a DELETE request to the Users#destroy action" do
 				before { delete user_path(user) }
 				specify { expect(response).to redirect_to(root_path) }
+			end
+		end
+
+		describe "as admin user" do
+			let(:user) { FactoryGirl.create(:user, admin: true) }
+
+			before { sign_in user, no_capybara: true }
+
+			describe "submitting a DELETE request for myself" do
+				it { expect { delete user_path(user) }.to change(User, :count).by(0) }
 			end
 		end
 

@@ -47,9 +47,14 @@ class UsersController < ApplicationController
 	end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
-    redirect_to users_url
+    @user = User.find(params[:id])
+    if @user != current_user
+      @user.destroy 
+      flash[:success] = "User destroyed."
+      redirect_to users_url
+    else
+      redirect_to current_user
+    end
   end
 
   	private
@@ -57,11 +62,11 @@ class UsersController < ApplicationController
       # Webから変更・参照を許可するパラメータを設定する.
       # (Strong Parameters)
   		def user_params
-  			params.require(:user).permit(	:name, 
+  			params.require(:user)
+                .permit(:name, 
   											:email,
   											:password,
-  											:password_confirmation
-                        )
+  											:password_confirmation)
   		end
 
       # Before Actions 
