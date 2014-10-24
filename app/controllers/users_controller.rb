@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:index, :edit, :update]
-  before_action :correct_user,   only: [:edit, :update]
-  before_action :admin_user,     only: :destroy
+  before_action :redirect_for_non_signed_in_user,
+                                  only: [:index, :edit, :update]
+  before_action :redirect_for_signed_in_user,
+                                  only: [:new, :create]
+  before_action :correct_user,    only: [:edit, :update]
+  before_action :admin_user,      only: :destroy
 
   # 以降、各actionが呼び出された時に呼び出される。
   def index
@@ -62,7 +65,7 @@ class UsersController < ApplicationController
   		end
 
       # Before Actions 
-      def signed_in_user
+      def redirect_for_non_signed_in_user
         unless signed_in?
           store_location
           redirect_to signin_url, notice: "Please sign in."
@@ -76,5 +79,9 @@ class UsersController < ApplicationController
 
       def admin_user
         redirect_to(root_path) unless current_user.admin?
+      end
+
+      def redirect_for_signed_in_user
+        redirect_to(root_path) if signed_in?
       end
 end

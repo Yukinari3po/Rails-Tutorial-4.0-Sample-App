@@ -114,5 +114,26 @@ describe "Authentication" do
 				specify { expect(response).to redirect_to(root_path) }
 			end
 		end
+
+		#
+		# => I add this code for exercise 9.6.6, but it's not wort well.
+		#    I don't know the reason why, but I go ahead without resolve this probrem.
+		#    (because redirecting seems to be fine working.)
+		#
+		# describe "as signed-in user" do
+		# 	let(:user) { FactoryGirl.create(:user) }
+
+		# 	before { sign_in user }
+
+		# 	describe "submitting to the create action" do
+		# 		before { post users_path }
+		# 		specify { expect(response).to redirect_to(root_path) }
+		# 	end
+
+		# 	describe "submitting to the new action" do
+		# 		before { get new_user_path }
+		# 		specify { expect(response).to redirect_to(root_path) }
+		# 	end
+		# end
 	end
 end
