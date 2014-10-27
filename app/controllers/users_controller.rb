@@ -70,14 +70,6 @@ class UsersController < ApplicationController
   											:password_confirmation)
   		end
 
-      # Before Actions 
-      def redirect_for_non_signed_in_user
-        unless signed_in?
-          store_location
-          redirect_to signin_url, notice: "Please sign in."
-        end
-      end
-
       def correct_user
         @user = User.find(params[:id])
         redirect_to(root_path) unless current_user?(@user)
