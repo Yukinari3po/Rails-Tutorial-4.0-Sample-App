@@ -1,8 +1,26 @@
 class User < ActiveRecord::Base
-	has_many :microposts, dependent: :destroy
+	has_many :microposts,
+							dependent: :destroy
+	
 	# テーブル同士の関連付けを示す外部キーがuser_idで表せないため、このように明示して指定している
-	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
-	has_many :followed_users, through: :relationships, source: :followed
+	has_many :relationships, 
+							foreign_key: "follower_id", 
+							dependent: :destroy
+	
+	has_many :followed_users,
+							through: :relationships, 
+							source: :followed
+
+	# ReverseRelationshipクラスは無いので、class名の指定を行っている。
+	# また、上述のfollowedと関連をつけるためにsourceを明示的にしているが、省略可能である。
+	has_many :reverse_relationships,
+							foreign_key: "followed_id",
+							class_name: "Relationship",
+							dependent: :destroy
+
+	has_many :followers, 	
+							through: :reverse_relationships,
+							source: :follower
 
 	before_save { email.downcase! }
 	before_create :create_remember_token
