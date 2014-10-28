@@ -78,6 +78,34 @@ describe "User Pages" do
 			it { should have_content(user.microposts.count) }
 		end
 	end
+
+	describe "home page" do
+		let(:user) { FactoryGirl.create(:user) }
+		before do
+			FactoryGirl.create(:micropost, user: user, content: "Foo")
+			sign_in user
+			visit root_path
+		end
+
+		it { should have_content("1 micropost") }
+		it { should_not have_content("microposts") }
+
+		describe "with multiple posts" do 
+			before do # ここで再読み込みして、post数を更新している
+				FactoryGirl.create(:micropost, user: user, content: "Bar")
+				visit root_path
+			end 
+			it { should have_content("2 microposts")}
+		end
+
+		describe "pagination" do
+			before do # ここで再読み込みして、paginationを更新している
+				30.times { FactoryGirl.create(:micropost, user: user, content: "FooBar") }
+				visit root_path
+			end
+			it { should have_selector('div.pagination') }
+		end
+	end
  	
  	describe "signup page" do
 		before { visit signup_path }
