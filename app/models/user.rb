@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
 	has_many :microposts, dependent: :destroy
+	# テーブル同士の関連付けを示す外部キーがuser_idで表せないため、このように明示して指定している
 	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
+	has_many :followed_users, through: :relationships, source: :followed
 
 	before_save { email.downcase! }
 	before_create :create_remember_token
@@ -30,6 +32,21 @@ class User < ActiveRecord::Base
 		# form_forやform_tagがSQLインジェクションを防止する効果があったからだろうか？
 
 		Micropost.where("user_id = ?", id)	
+	end
+
+	def following?(other_user)
+		relationships.find_by(followed_id: other_user.id)
+	end
+
+	def follow!(other_user)
+		# 関数名の後に!をつけることによって例外が発生する。
+		# self.relationships.create!()と同様の意味を表し、selfを記述するか
+		# どうかは好み。
+		relationships.create!(followed_id: other_user.id)
+	end
+
+	def unfollow!(other_user)
+		relationships.find_by(followed_id: other_user.id).destroy
 	end
 
 	private
