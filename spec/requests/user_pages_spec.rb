@@ -76,6 +76,21 @@ describe "User Pages" do
 			it { should have_content(m1.content) }
 			it { should have_content(m2.content) }
 			it { should have_content(user.microposts.count) }
+
+			describe "with signed-in" do
+				before { sign_in user }
+				it { should have_link('delete', href: micropost_path(m1)) }
+			end
+
+			describe "microposts posted by another user" do
+				let(:another_user) { FactoryGirl.create(:user) }
+				let!(:m3) { FactoryGirl.create(:micropost, user: another_user, content: "FooBar") }
+				before do 
+					sign_in user
+					visit user_path(another_user)
+				end
+				it { should_not have_link('delete', href: micropost_path(m3)) }
+			end
 		end
 	end
 
@@ -103,6 +118,7 @@ describe "User Pages" do
 				30.times { FactoryGirl.create(:micropost, user: user, content: "FooBar") }
 				visit root_path
 			end
+
 			it { should have_selector('div.pagination') }
 		end
 	end
