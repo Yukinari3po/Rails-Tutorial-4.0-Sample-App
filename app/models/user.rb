@@ -43,13 +43,7 @@ class User < ActiveRecord::Base
 	end
 
 	def feed
-		# このコードは実装段階です。
-		# 完全な実装は第11章「ユーザーをフォローする」を参照してください。
-
-		# この疑問符はSQLインジェクション対策の効果がある。これまでにこの話題が上がらなかったのは、
-		# form_forやform_tagがSQLインジェクションを防止する効果があったからだろうか？
-
-		Micropost.where("user_id = ?", id)	
+		Micropost.from_users_followed_by(self)
 	end
 
 	def following?(other_user)
