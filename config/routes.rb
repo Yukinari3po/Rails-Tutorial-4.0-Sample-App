@@ -1,7 +1,14 @@
 SampleApp::Application.routes.draw do
-  resources :users
+  resources :users do
+    # user/1/following などのURLを生成する
+    member do 
+      get :following, :followers
+    end
+  end
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
   # get "users/new"   # If you add the "resources :users", 
                       # you can access with this URL without this code.
   root  'static_pages#home'

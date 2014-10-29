@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :redirect_for_non_signed_in_user,
-                                  only: [:index, :edit, :update]
+                                  only: [:index, :edit, :update, :destroy, :following, :followers]
   before_action :redirect_for_signed_in_user,
                                   only: [:new, :create]
   before_action :correct_user,    only: [:edit, :update]
@@ -56,6 +56,20 @@ class UsersController < ApplicationController
     else
       redirect_to current_user
     end
+  end
+
+  def following
+    @title = "Following"
+    @user = User.find(params[:id])
+    @users = @user.followed_users.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render 'show_follow'
   end
 
   	private
