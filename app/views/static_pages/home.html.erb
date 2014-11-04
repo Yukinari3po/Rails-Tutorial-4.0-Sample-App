@@ -18,7 +18,7 @@
 		<input id="comment" type="text"> <input id="send" type="button" value="send">
 
 		<script>
-		  var ws_rails = new WebSocketRails("localhost:3000/websocket");
+		  var ws_rails = new WebSocketRails("<%= request.raw_host_with_port + websocket_path %>");
 		  // メッセージ受信時の処理
 		  ws_rails.bind("websocket_chat", function(message){
 		    var message_li = document.createElement("li");
