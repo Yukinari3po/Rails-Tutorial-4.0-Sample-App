@@ -2,6 +2,7 @@
 class WebsocketChatController < WebsocketRails::BaseController
   def message_recieve
 
+
 	# クライアントからのメッセージを取得
 	recieve_message = message()
 
